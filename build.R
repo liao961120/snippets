@@ -63,6 +63,7 @@ Gallery
 {LINKS}
 ")
 README = paste0(README, "
+
 <style>
     img {
         background-color: white;
