@@ -35,3 +35,11 @@ Gallery
    ![](tikz/PDF/tree0.svg)  
 1. [`tree1.tex`](tikz/tree1.tex)
    ![](tikz/PDF/tree1.svg)  
+<style>
+    img {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+    }
+</style>
+

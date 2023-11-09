@@ -16,7 +16,7 @@ for ( fp in Sys.glob("*/PDF/*.pdf") ) {
     }
     setwd(dirname(fp))
     fp = basename(fp)
-    stom::pdf2svg(fp, white=T)
+    stom::pdf2svg(fp)
     setwd(WD)
 }
 
@@ -61,6 +61,15 @@ Gallery
 -------
 
 {LINKS}
+")
+README = paste0(README, "
+<style>
+    img {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+    }
+</style>
 ")
 
 xfun::write_utf8(README, "README.md")
