@@ -15,32 +15,23 @@ To update the gallery below, run:
 
 ```bash
 Rscript build.R
-# Rscript build.R --full  # rebuild all svg from pdf
+# Rscript build.R --full  # rebuild all img from pdf
 ```
 
 Gallery
 -------
 
-1. [`equations-intra.tex`](eq/equations-intra.tex)
-   ![](eq/PDF/equations-intra.svg)  
-1. [`model-formulation.tex`](eq/model-formulation.tex)
-   ![](eq/PDF/model-formulation_1.svg)  
-   ![](eq/PDF/model-formulation_2.svg)  
-   ![](eq/PDF/model-formulation_3.svg)  
-1. [`dag-feedback-dyn.tex`](tikz/dag-feedback-dyn.tex)
-   ![](tikz/PDF/dag-feedback-dyn.svg)  
-1. [`dag-intra.tex`](tikz/dag-intra.tex)
-   ![](tikz/PDF/dag-intra.svg)  
-1. [`tree0.tex`](tikz/tree0.tex)
-   ![](tikz/PDF/tree0.svg)  
-1. [`tree1.tex`](tikz/tree1.tex)
-   ![](tikz/PDF/tree1.svg)  
-
-<style>
-    img {
-        background-color: white;
-        padding: 15px;
-        border-radius: 8px;
-    }
-</style>
-
+1. [`equations-intra.tex`](eq/equations-intra.tex)  
+   <img src="eq/PDF/equations-intra.png" width=300px />  
+1. [`model-formulation.tex`](eq/model-formulation.tex)  
+   <img src="eq/PDF/model-formulation_1.png" width=300px />  
+   <img src="eq/PDF/model-formulation_2.png" width=300px />  
+   <img src="eq/PDF/model-formulation_3.png" width=300px />  
+1. [`dag-feedback-dyn.tex`](tikz/dag-feedback-dyn.tex)  
+   <img src="tikz/PDF/dag-feedback-dyn.png" width=300px />  
+1. [`dag-intra.tex`](tikz/dag-intra.tex)  
+   <img src="tikz/PDF/dag-intra.png" width=300px />  
+1. [`tree0.tex`](tikz/tree0.tex)  
+   <img src="tikz/PDF/tree0.png" width=300px />  
+1. [`tree1.tex`](tikz/tree1.tex)  
+   <img src="tikz/PDF/tree1.png" width=300px />  

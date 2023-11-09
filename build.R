@@ -1,23 +1,19 @@
 # Call as:
 #   Rscript build.R  
-#   Rscript build.R --full  # rebuild all svg from pdf
+#   Rscript build.R --full  # rebuild all img from pdf
 args = "" #c( "--full" )
 if (!interactive())
     args = commandArgs(TRUE)
 smart = !stom::cmd_has(args, "--full")
 
-WD = getwd()
 for ( fp in Sys.glob("*/PDF/*.pdf") ) {
-    # Skip if SVG already exists
+    # Skip if img already exists
     if ( smart ) {
-        svg = file.path( dirname(fp), 
-                         paste0(basename(xfun::sans_ext(fp)),"*.svg") )
-        if ( length(Sys.glob(svg)) > 0 ) next
+        img = file.path( dirname(fp), 
+                         paste0(basename(xfun::sans_ext(fp)),"*.png") )
+        if ( length(Sys.glob(img)) > 0 ) next
     }
-    setwd(dirname(fp))
-    fp = basename(fp)
-    stom::pdf2svg(fp)
-    setwd(WD)
+    stom::pdf2png(fp, dpi=300, white = TRUE)
 }
 
 LINKS = sapply(Sys.glob("*/PDF/*.pdf"), function (pdf) {
@@ -26,10 +22,11 @@ LINKS = sapply(Sys.glob("*/PDF/*.pdf"), function (pdf) {
     fstem = basename(pdf) |> tools::file_path_sans_ext()
     
     src = file.path( dir_src, paste0(fstem,".tex") )
-    imgs = Sys.glob( paste0(dir_pdf,"/",fstem,"*.svg") )
+    imgs = Sys.glob( paste0(dir_pdf,"/",fstem,"*.png") )
     
-    src_text = glue::glue("1. [`{basename(src)}`]({src})")
-    img_text = glue::glue("   ![]({imgs})  ")
+    src_text = glue::glue("1. [`{basename(src)}`]({src})  ")
+    # img_text = glue::glue("   ![]({imgs})  ")
+    img_text = paste0('   <img src="', imgs, '" width=300px />  ')
     md = paste( c(src_text,img_text), collapse="\n" )
     return(md)
 }) |> paste(collapse="\n")
@@ -54,23 +51,13 @@ To update the gallery below, run:
 
 ```bash
 Rscript build.R
-# Rscript build.R --full  # rebuild all svg from pdf
+# Rscript build.R --full  # rebuild all img from pdf
 ```
 
 Gallery
 -------
 
 {LINKS}
-")
-README = paste0(README, "
-
-<style>
-    img {
-        background-color: white;
-        padding: 15px;
-        border-radius: 8px;
-    }
-</style>
 ")
 
 xfun::write_utf8(README, "README.md")
