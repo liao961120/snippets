@@ -3,7 +3,7 @@
 Personal LaTeX Snippets
 =======================
 
-This directory holds the snippets I've used to code equations and TikZ graphs in LaTeX.
+This directory holds the snippets of equations and TikZ graphs I've coded.
 
 To search the content inside the `.tex` files, run:
 
