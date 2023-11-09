@@ -39,7 +39,7 @@ README = glue::glue("
 Personal LaTeX Snippets
 =======================
 
-This directory holds the snippets I've used to code equations and TikZ graphs and in LaTeX.
+This directory holds the snippets I've used to code equations and TikZ graphs in LaTeX.
 
 To search the content inside the `.tex` files, run:
 
