@@ -1,0 +1,62 @@
+%' Multi-page equations for specifying a large model's data-generating processes 
+%' 
+%' @src: The equations in the post 'Beyond Item Response Theory' 
+%' @url: https://yongfu.name/2023/06/27/irt5/#model-formulation
+\documentclass[12pt]{article}
+\usepackage[paperheight=1.5in,paperwidth=7in,margin=0.1in,heightrounded
+            % ,showframe
+            ]{geometry}
+\usepackage{amsmath}
+
+\usepackage{ifxetex}
+\ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra}  % also loads fontspec
+    \usepackage{xunicode}
+    \defaultfontfeatures{Mapping=tex-text}
+    \setmainfont[Scale=1,Ligatures={Common}]{Adobe Caslon Pro}
+    \setromanfont[Scale=1,Ligatures={Common}]{Adobe Caslon Pro}
+    % \setmathrm[Scale=1]{Adobe Caslon Pro}
+    \setmathfont(Digits,Latin)[Numbers={Lining,Proportional}]{Adobe Caslon Pro}
+    % \setmathsfont(Greek)[Uppercase=Regular,Lowercase=Italic,Scale=MatchUppercase]{GFS Porson}
+    \setmathsfont(Greek)[Scale=1.2]{GFS Porson}
+\else
+   \usepackage{tgtermes}
+\fi
+
+
+\begin{document} 
+\pagenumbering{gobble}
+
+\begin{equation}
+\mathop{
+   \begin{bmatrix}
+   1 & 0 \\
+   0 & 1 \\
+   -1 & -1
+   \end{bmatrix}
+}_{ Contrast } 
+\mathop{
+   \begin{bmatrix}
+   \sigma_{1}^{2} & \sigma_{1 2} \\
+   \sigma_{2 1} & \sigma_{2}^{2} 
+   \end{bmatrix}
+}_{ \substack{\phantom{S} \\ Covariance\\ Matrix } } 
+\mathop{
+   \begin{bmatrix}
+   1 & 0 & -1 \\
+   0 & 1 & -1
+   \end{bmatrix}
+}_{  \substack{\phantom{s} \\ Contrast^T} } 
+=
+\mathop{
+   \begin{bmatrix}
+   \sigma_{1}^{2}                 & \sigma_{1 2}                     & -\sigma_{1}^{2} - \sigma_{1 2} \\
+   \sigma_{2 1}                   & \sigma_{2}^{2}                   & -\sigma_{2}^{2} - \sigma_{2 1} \\
+   -\sigma_{1}^{2} - \sigma_{2 1} & -\sigma_{2}^{2} - \sigma_{1 2} & \sigma_{1}^{2} + \sigma_{2}^{2} + \sigma_{1 2} + \sigma_{2 1}
+   \end{bmatrix}
+}_{ \substack{ Covariance~Matrix ~ (Reconstructed) } } 
+\end{equation}
+
+\end{document}
+ 

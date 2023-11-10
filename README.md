@@ -21,6 +21,8 @@ Rscript build.R
 Gallery
 -------
 
+1. [`bottom-annotation.tex`](eq/bottom-annotation.tex)  
+   <img src="eq/PDF/bottom-annotation.png" width=300px />  
 1. [`equations-intra.tex`](eq/equations-intra.tex)  
    <img src="eq/PDF/equations-intra.png" width=300px />  
 1. [`model-formulation.tex`](eq/model-formulation.tex)  
