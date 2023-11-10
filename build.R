@@ -26,7 +26,7 @@ LINKS = sapply(Sys.glob("*/PDF/*.pdf"), function (pdf) {
     
     src_text = glue::glue("1. [`{basename(src)}`]({src})  ")
     # img_text = glue::glue("   ![]({imgs})  ")
-    img_text = paste0('   <img src="', imgs, '" width=300px />  ')
+    img_text = paste0('   <img src="', imgs, '" width=380px />  ')
     md = paste( c(src_text,img_text), collapse="\n" )
     return(md)
 }) |> paste(collapse="\n")

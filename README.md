@@ -22,18 +22,18 @@ Gallery
 -------
 
 1. [`bottom-annotation.tex`](eq/bottom-annotation.tex)  
-   <img src="eq/PDF/bottom-annotation.png" width=300px />  
+   <img src="eq/PDF/bottom-annotation.png" width=380px />  
 1. [`equations-intra.tex`](eq/equations-intra.tex)  
-   <img src="eq/PDF/equations-intra.png" width=300px />  
+   <img src="eq/PDF/equations-intra.png" width=380px />  
 1. [`model-formulation.tex`](eq/model-formulation.tex)  
-   <img src="eq/PDF/model-formulation_1.png" width=300px />  
-   <img src="eq/PDF/model-formulation_2.png" width=300px />  
-   <img src="eq/PDF/model-formulation_3.png" width=300px />  
+   <img src="eq/PDF/model-formulation_1.png" width=380px />  
+   <img src="eq/PDF/model-formulation_2.png" width=380px />  
+   <img src="eq/PDF/model-formulation_3.png" width=380px />  
 1. [`dag-feedback-dyn.tex`](tikz/dag-feedback-dyn.tex)  
-   <img src="tikz/PDF/dag-feedback-dyn.png" width=300px />  
+   <img src="tikz/PDF/dag-feedback-dyn.png" width=380px />  
 1. [`dag-intra.tex`](tikz/dag-intra.tex)  
-   <img src="tikz/PDF/dag-intra.png" width=300px />  
+   <img src="tikz/PDF/dag-intra.png" width=380px />  
 1. [`tree0.tex`](tikz/tree0.tex)  
-   <img src="tikz/PDF/tree0.png" width=300px />  
+   <img src="tikz/PDF/tree0.png" width=380px />  
 1. [`tree1.tex`](tikz/tree1.tex)  
-   <img src="tikz/PDF/tree1.png" width=300px />  
+   <img src="tikz/PDF/tree1.png" width=380px />  
