@@ -1,0 +1,28 @@
+%' Matrix multiplication
+%' 
+%' @src: The 1st equation in 'Demystifying Item Response Theory (3/4)' 
+%' @url: https://yongfu.name/2023/03/29/irt3/#reconstructing-dropped-estimates
+\documentclass[12pt,preview,border=0]{standalone}
+\usepackage[paperheight=10cm,paperwidth=14cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+$$
+\begin{bmatrix}
+    1 & 0 \\
+    0 & 1 \\
+    -1 & -1
+    \end{bmatrix} 
+    \begin{bmatrix}
+    E_1 \\
+    E_2
+    \end{bmatrix} = 
+    \begin{bmatrix}
+    E_1 \\
+    E_2 \\
+    -E_1 - E_2
+\end{bmatrix}
+$$
+
+\end{document}

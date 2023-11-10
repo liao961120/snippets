@@ -1,7 +1,7 @@
-%' Multi-page equations for specifying a large model's data-generating processes 
+%' Annotate matrix with text
 %' 
-%' @src: The equations in the post 'Beyond Item Response Theory' 
-%' @url: https://yongfu.name/2023/06/27/irt5/#model-formulation
+%' @src: Bottom notes in 'Demystifying Item Response Theory (3/4)' 
+%' @url: https://yongfu.name/2023/03/29/irt3/#reconstructing-dropped-estimates
 \documentclass[12pt]{article}
 \usepackage[paperheight=1.5in,paperwidth=7in,margin=0.1in,heightrounded
             % ,showframe
@@ -28,7 +28,7 @@
 \begin{document} 
 \pagenumbering{gobble}
 
-\begin{equation}
+$$
 \mathop{
    \begin{bmatrix}
    1 & 0 \\
@@ -56,7 +56,7 @@
    -\sigma_{1}^{2} - \sigma_{2 1} & -\sigma_{2}^{2} - \sigma_{1 2} & \sigma_{1}^{2} + \sigma_{2}^{2} + \sigma_{1 2} + \sigma_{2 1}
    \end{bmatrix}
 }_{ \substack{ Covariance~Matrix ~ (Reconstructed) } } 
-\end{equation}
+$$
 
 \end{document}
  
