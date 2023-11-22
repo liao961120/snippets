@@ -62,3 +62,7 @@ Gallery
 
 xfun::write_utf8(README, "README.md")
 stom::pandoc_html("README.md", "README.html")
+
+stom::pandoc_html("eq.md", "index.html", c("--number-sections", "-V", 
+                                        paste0("date=",'"',format.Date(Sys.Date(),"%B %d, %Y"),'"') ) 
+                )

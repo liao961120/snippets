@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Yongfu Liao" />
+  <title>Math Equation Snippets</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--
+https://yihui.org/en/2023/10/html-article/
+-->
+
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/sidenotes.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/appendix.min.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/rstudio/markdown@1.11/inst/resources/default.min.css,npm/@xiee/utils/css/article.min.css">
+-->
+
+<script src="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/js/sidenotes.min.js,npm/@xiee/utils/js/appendix.min.js,npm/@xiee/utils/js/right-quote.min.js" defer></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/rstudio/markdown@1.11/inst/resources/default.min.css,npm/@xiee/utils/css/article.min.css,npm/@xiee/utils/css/heading-anchor.min.css">
+<style type="text/css">
+    header{text-align: center;}
+    html {scroll-behavior: smooth;}
+</style>
+
+<header id="title-block-header">
+<h1 class="title">Math Equation Snippets</h1>
+<p class="subtitle">Right-click to copy TeX commands to clipboard</p>
+<p class="author">Yongfu Liao</p>
+<p class="date">November 22, 2023</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#famous-equations" id="toc-famous-equations"><span
+class="toc-section-number">1</span> Famous Equations</a>
+<ul>
+<li><a href="#taylor-series" id="toc-taylor-series"><span
+class="toc-section-number">1.1</span> Taylor series</a></li>
+</ul></li>
+<li><a href="#personal-snippets" id="toc-personal-snippets"><span
+class="toc-section-number">2</span> Personal Snippets</a>
+<ul>
+<li><a href="#martrix-multiplication"
+id="toc-martrix-multiplication"><span
+class="toc-section-number">2.1</span> Martrix Multiplication</a></li>
+<li><a href="#annotating-matrices" id="toc-annotating-matrices"><span
+class="toc-section-number">2.2</span> Annotating Matrices</a></li>
+<li><a href="#a-bayesian-model" id="toc-a-bayesian-model"><span
+class="toc-section-number">2.3</span> A Bayesian Model</a></li>
+</ul></li>
+<li><a href="#source-code" id="toc-source-code">Source Code</a></li>
+</ul>
+</nav>
+<section id="famous-equations" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Famous
+Equations</h1>
+<section id="taylor-series" class="level2" data-number="1.1">
+<h2 data-number="1.1"><span class="header-section-number">1.1</span>
+Taylor series</h2>
+<p><span class="math display">\[
+f(x) = \sum _{n=0}^{\infty }{\frac {f^{(n)}(a)}{n!}}(x-a)^{n}
+     = f(a)+{\frac {f&#39;(a)}{1!}}(x-a)+{\frac
+{f&#39;&#39;(a)}{2!}}(x-a)^{2}+{\frac
+{f&#39;&#39;&#39;(a)}{3!}}(x-a)^{3}+\cdots
+\]</span></p>
+</section>
+</section>
+<section id="personal-snippets" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span>
+Personal Snippets</h1>
+<section id="martrix-multiplication" class="level2" data-number="2.1">
+<h2 data-number="2.1"><span class="header-section-number">2.1</span>
+Martrix Multiplication</h2>
+<p><span class="math display">\[
+\begin{bmatrix}
+    1 &amp; 0 \\
+    0 &amp; 1 \\
+    -1 &amp; -1
+    \end{bmatrix}
+    \begin{bmatrix}
+    E_1 \\
+    E_2
+    \end{bmatrix} =
+    \begin{bmatrix}
+    E_1 \\
+    E_2 \\
+    -E_1 - E_2
+\end{bmatrix}
+\]</span></p>
+</section>
+<section id="annotating-matrices" class="level2" data-number="2.2">
+<h2 data-number="2.2"><span class="header-section-number">2.2</span>
+Annotating Matrices</h2>
+<p><span class="math display">\[
+\mathop{
+   \begin{bmatrix}
+   1 &amp; 0 \\
+   0 &amp; 1 \\
+   -1 &amp; -1
+   \end{bmatrix}
+}_{ Contrast }
+\mathop{
+   \begin{bmatrix}
+   \sigma_{1}^{2} &amp; \sigma_{1 2} \\
+   \sigma_{2 1} &amp; \sigma_{2}^{2}
+   \end{bmatrix}
+}_{ \substack{\phantom{S} \\ Covariance\\ Matrix } }
+\mathop{
+   \begin{bmatrix}
+   1 &amp; 0 &amp; -1 \\
+   0 &amp; 1 &amp; -1
+   \end{bmatrix}
+}_{  \substack{\phantom{s} \\ Contrast^T} }
+=
+\mathop{
+   \begin{bmatrix}
+   \sigma_{1}^{2}                 &amp; \sigma_{1
+2}                     &amp; -\sigma_{1}^{2} - \sigma_{1 2} \\
+   \sigma_{2 1}                   &amp;
+\sigma_{2}^{2}                   &amp; -\sigma_{2}^{2} - \sigma_{2 1} \\
+   -\sigma_{1}^{2} - \sigma_{2 1} &amp; -\sigma_{2}^{2} - \sigma_{1 2}
+&amp; \sigma_{1}^{2} + \sigma_{2}^{2} + \sigma_{1 2} + \sigma_{2 1}
+   \end{bmatrix}
+}_{ \substack{ Covariance~Matrix ~ (Reconstructed) } }
+\]</span></p>
+</section>
+<section id="a-bayesian-model" class="level2" data-number="2.3">
+<h2 data-number="2.3"><span class="header-section-number">2.3</span> A
+Bayesian Model</h2>
+<p><span class="math display">\[
+\begin{aligned}
+    &amp; \hphantom{xxxxxx} \textbf{Process Model} \\
+    &amp;\begin{cases}
+        P_{t + \Delta t} = P_t + r P_t (1 - \frac{P_t}{K}) \Delta t \\
+        P_\text{t=0}  ~~ = P_0 \\
+    \end{cases}
+    \\
+    &amp;\begin{bmatrix}
+        N_1 \\
+        N_2 \\
+        \vdots \\
+        N_T
+    \end{bmatrix} \sim \text{MVNormal}(
+        \begin{bmatrix}
+            0 \\
+            0 \\
+            \vdots \\
+            0
+        \end{bmatrix},
+    \textbf{K} )
+    \\
+    &amp; ~~~ k_{i,j} = \eta ~ \text{exp}( -\rho \text{d}^\text{2}_{i,j}
+) \\
+    \end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+    &amp; \hphantom{xxxx} \textbf{Measurement Model} \\
+    &amp; \hphantom{xxxxx} \mathrm{ P_{t}^{obs} }  \sim \text{Normal}(
+M_t, \sigma )  \\
+    &amp; \hphantom{xx} M_t                     =  b ~ \left[ a P_t -
+\left( 1 - a \right) N_t \right] - c
+\end{aligned}
+\]</span></p>
+</section>
+</section>
+<section id="source-code" class="level1 unnumbered">
+<h1 class="unnumbered">Source Code</h1>
+<p>Visit <a href="https://github.com/liao961120/snippets"
+class="uri">https://github.com/liao961120/snippets</a> for the source
+code generating this site.</p>
+</section>
+<!--
+Markdeep Diagram parser
+    Parses all code blocks with `.goat` className as Markdeep diagram.
+-->
+<script>window.markdeepOptions = {mode: 'script', detectMath: false};</script>
+<script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js"></script>
+<script>
+  document.querySelectorAll(".goat").forEach(e => {
+    var dag = e.querySelector("code").innerText;
+    let graph = document.createElement("div");
+    graph.className = "markdeep-dag";
+    graph.innerHTML = window.markdeep.formatDiagram(dag, "undefined");
+    graph.querySelectorAll('path').forEach( p => {
+      p.setAttribute("stroke", "currentcolor");
+    });
+    e.after(graph);
+    e.remove();
+  })
+</script>
+
+<!--
+Hack to apply the style of <https://cran.r-project.org/web/packages/markdown/vignettes/article.html>
+-->
+<script>
+    // Add body style
+    var newElem = document.createElement('div');
+    newElem.className = "body";
+    Array.prototype.forEach.call(document.querySelectorAll('section'), function(c){
+        newElem.appendChild(c);
+    });
+    document.body.appendChild(newElem);
+
+    // Add header style
+    document.getElementById('title-block-header').className = "frontmatter";
+
+    // Add anchor
+    document.querySelectorAll('section').forEach(h => {
+      if (h.id) h.querySelector('h1,h2,h3,h4,h5,h6').innerHTML += ` <span class="anchor"><a href="#${h.id}">#</a></span>`;
+    });
+</script>
+
+
+
+<!--
+Deal with multiple `\tag`s in equations (pandoc-crossref limitation)
+-->
+<script>
+    const regex = /\\tag\{[0-9.]+\}/g;
+    document.querySelectorAll(".math.display").forEach(e => {
+        e.innerText = e.innerText.replace(regex, '');
+    })
+</script>
+
+</body>
+</html>

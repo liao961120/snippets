@@ -25,6 +25,8 @@ Gallery
    <img src="eq/PDF/bottom-annotation.png" width=380px />  
 1. [`equations-intra.tex`](eq/equations-intra.tex)  
    <img src="eq/PDF/equations-intra.png" width=380px />  
+1. [`intra2.tex`](eq/intra2.tex)  
+   <img src="eq/PDF/intra2.png" width=380px />  
 1. [`matrix-multiplication.tex`](eq/matrix-multiplication.tex)  
    <img src="eq/PDF/matrix-multiplication.png" width=380px />  
 1. [`model-formulation.tex`](eq/model-formulation.tex)  
