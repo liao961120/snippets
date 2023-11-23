@@ -16,7 +16,7 @@ To Do:
 :::: {.body}
 
 ::: {.side .side-right}
-This site is built with Yihui's [*simple HTML article*](https://yihui.org/en/2023/10/html-article/) format.
+The theme of this site is based on Yihui's [*simple HTML article*](https://yihui.org/en/2023/10/html-article/).
 :::
 
 [liao961120/snippets](https://github.com/liao961120/snippets) holds the TeX snippets I've used to code equations and TikZ graphs. To search the content inside the `.tex` files contained in this repo, run:

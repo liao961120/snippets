@@ -59,7 +59,9 @@ Sys.setlocale("LC_ALL","English")
 pd_args = c(#"--number-sections", 
             "-V", 
             paste0("date=",'"',format.Date(Sys.Date(),"%B %d, %Y"),'"'),
-            # "--mathjax",
+            # "--katex",
+            "--toc-depth=3",
+            "--strip-comments",
             NULL
 )
 
