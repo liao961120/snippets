@@ -59,7 +59,8 @@ Sys.setlocale("LC_ALL","English")
 pd_args = c(#"--number-sections", 
             "-V", 
             paste0("date=",'"',format.Date(Sys.Date(),"%B %d, %Y"),'"'),
-            "--shift-heading-level-by=-1"
+            # "--mathjax",
+            NULL
 )
 
 # Plug GALLERY at the end of `eq.md` to generate `README.md` and `index.html`

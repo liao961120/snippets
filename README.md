@@ -4,6 +4,15 @@ author: Yongfu Liao
 ---
 
 
+<!-- 
+To Do: 
+    move mathjax to document bottom (pandoc_html())
+    copy math TeX command button (JS)
+        1. extract plain text from .math.display
+        2. save to some element
+        3. add a copy button
+ -->
+
 :::: {.body}
 
 ::: {.side .side-right}
@@ -34,7 +43,8 @@ Textbook Equations
 ### Taylor series
 
 :::: {.side .side-right}
-Right-click equations to copy the TeX commands to clipboard.
+Click on &nbsp;[]{.copy-button style="float:initial;display:inline-block"} 
+to copy the equation's TeX commands.
 ::::
 
 $$
