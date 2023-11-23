@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Yongfu Liao" />
-  <title>Math Equation Snippets</title>
+  <title>Some Personal TeX Snippets</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script
@@ -44,45 +108,100 @@ https://yihui.org/en/2023/10/html-article/
 <script src="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/js/sidenotes.min.js,npm/@xiee/utils/js/appendix.min.js,npm/@xiee/utils/js/right-quote.min.js" defer></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/rstudio/markdown@1.11/inst/resources/default.min.css,npm/@xiee/utils/css/article.min.css,npm/@xiee/utils/css/heading-anchor.min.css">
-<style type="text/css">
-    header{text-align: center;}
-    html {scroll-behavior: smooth;}
-</style>
 
+<!-- Style patch -->
+<style type="text/css">
+    html {
+        scroll-behavior: smooth;
+    }
+    header {
+        text-align: center;
+    }
+    pre > code {
+        padding: .7em .9em;
+        border-radius: 8px;
+    }
+</style>
 <header id="title-block-header">
-<h1 class="title">Math Equation Snippets</h1>
-<p class="subtitle">Right-click to copy TeX commands to clipboard</p>
+<h1 class="title">Some Personal TeX Snippets</h1>
 <p class="author">Yongfu Liao</p>
-<p class="date">November 22, 2023</p>
+<p class="date">November 23, 2023</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#famous-equations" id="toc-famous-equations"><span
-class="toc-section-number">1</span> Famous Equations</a>
+<li><a href="#textbook-equations" id="toc-textbook-equations">Textbook
+Equations</a>
 <ul>
-<li><a href="#taylor-series" id="toc-taylor-series"><span
-class="toc-section-number">1.1</span> Taylor series</a></li>
+<li><a href="#taylor-series" id="toc-taylor-series">Taylor
+series</a></li>
 </ul></li>
-<li><a href="#personal-snippets" id="toc-personal-snippets"><span
-class="toc-section-number">2</span> Personal Snippets</a>
+<li><a href="#personal-snippets" id="toc-personal-snippets">Personal
+Snippets</a>
 <ul>
 <li><a href="#martrix-multiplication"
-id="toc-martrix-multiplication"><span
-class="toc-section-number">2.1</span> Martrix Multiplication</a></li>
-<li><a href="#annotating-matrices" id="toc-annotating-matrices"><span
-class="toc-section-number">2.2</span> Annotating Matrices</a></li>
-<li><a href="#a-bayesian-model" id="toc-a-bayesian-model"><span
-class="toc-section-number">2.3</span> A Bayesian Model</a></li>
+id="toc-martrix-multiplication">Martrix Multiplication</a></li>
+<li><a href="#annotating-matrices"
+id="toc-annotating-matrices">Annotating Matrices</a></li>
+<li><a href="#a-bayesian-model" id="toc-a-bayesian-model">A Bayesian
+Model</a></li>
 </ul></li>
-<li><a href="#source-code" id="toc-source-code">Source Code</a></li>
+<li><a href="#gallery" id="toc-gallery">Gallery</a>
+<ul>
+<li><a href="#graphs" id="toc-graphs">Graphs</a>
+<ul>
+<li><a href="#dag-feedback-dyn.tex"
+id="toc-dag-feedback-dyn.tex"><code>dag-feedback-dyn.tex</code></a></li>
+<li><a href="#dag-intra.tex"
+id="toc-dag-intra.tex"><code>dag-intra.tex</code></a></li>
+<li><a href="#tree0.tex"
+id="toc-tree0.tex"><code>tree0.tex</code></a></li>
+<li><a href="#tree1.tex"
+id="toc-tree1.tex"><code>tree1.tex</code></a></li>
+</ul></li>
+<li><a href="#equations" id="toc-equations">Equations</a>
+<ul>
+<li><a href="#bottom-annotation.tex"
+id="toc-bottom-annotation.tex"><code>bottom-annotation.tex</code></a></li>
+<li><a href="#equations-intra.tex"
+id="toc-equations-intra.tex"><code>equations-intra.tex</code></a></li>
+<li><a href="#intra2.tex"
+id="toc-intra2.tex"><code>intra2.tex</code></a></li>
+<li><a href="#matrix-multiplication.tex"
+id="toc-matrix-multiplication.tex"><code>matrix-multiplication.tex</code></a></li>
+<li><a href="#model-formulation.tex"
+id="toc-model-formulation.tex"><code>model-formulation.tex</code></a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
-<section id="famous-equations" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Famous
-Equations</h1>
-<section id="taylor-series" class="level2" data-number="1.1">
-<h2 data-number="1.1"><span class="header-section-number">1.1</span>
-Taylor series</h2>
+<div class="body">
+<div class="side side-right">
+<p>This site is built with Yihui’s <a
+href="https://yihui.org/en/2023/10/html-article/"><em>simple HTML
+article</em></a> format.</p>
+</div>
+<p><a
+href="https://github.com/liao961120/snippets">liao961120/snippets</a>
+holds the TeX snippets I’ve used to code equations and TikZ graphs. To
+search the content inside the <code>.tex</code> files contained in this
+repo, run:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> search.sh SEARCH_TERM</span></code></pre></div>
+<p>To update <code>README.md</code> (i.e., build <a
+href="#gallery">Gallery</a>), run:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> build.R</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Rscript build.R --full  # rebuild all img from pdf</span></span></code></pre></div>
+<p>To edit LaTeX equations that get rendered with mathjax, edit
+<code>eq.md</code>.</p>
+</div>
+<section id="textbook-equations" class="level1">
+<h1>Textbook Equations</h1>
+<section id="taylor-series" class="level2">
+<h2>Taylor series</h2>
+<div class="side side-right">
+<p>Right-click equations to copy the TeX commands to clipboard.</p>
+</div>
 <p><span class="math display">\[
 f(x) = \sum _{n=0}^{\infty }{\frac {f^{(n)}(a)}{n!}}(x-a)^{n}
      = f(a)+{\frac {f&#39;(a)}{1!}}(x-a)+{\frac
@@ -91,12 +210,10 @@ f(x) = \sum _{n=0}^{\infty }{\frac {f^{(n)}(a)}{n!}}(x-a)^{n}
 \]</span></p>
 </section>
 </section>
-<section id="personal-snippets" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span>
-Personal Snippets</h1>
-<section id="martrix-multiplication" class="level2" data-number="2.1">
-<h2 data-number="2.1"><span class="header-section-number">2.1</span>
-Martrix Multiplication</h2>
+<section id="personal-snippets" class="level1">
+<h1>Personal Snippets</h1>
+<section id="martrix-multiplication" class="level2">
+<h2>Martrix Multiplication</h2>
 <p><span class="math display">\[
 \begin{bmatrix}
     1 &amp; 0 \\
@@ -114,9 +231,8 @@ Martrix Multiplication</h2>
 \end{bmatrix}
 \]</span></p>
 </section>
-<section id="annotating-matrices" class="level2" data-number="2.2">
-<h2 data-number="2.2"><span class="header-section-number">2.2</span>
-Annotating Matrices</h2>
+<section id="annotating-matrices" class="level2">
+<h2>Annotating Matrices</h2>
 <p><span class="math display">\[
 \mathop{
    \begin{bmatrix}
@@ -150,9 +266,8 @@ Annotating Matrices</h2>
 }_{ \substack{ Covariance~Matrix ~ (Reconstructed) } }
 \]</span></p>
 </section>
-<section id="a-bayesian-model" class="level2" data-number="2.3">
-<h2 data-number="2.3"><span class="header-section-number">2.3</span> A
-Bayesian Model</h2>
+<section id="a-bayesian-model" class="level2">
+<h2>A Bayesian Model</h2>
 <p><span class="math display">\[
 \begin{aligned}
     &amp; \hphantom{xxxxxx} \textbf{Process Model} \\
@@ -188,13 +303,65 @@ M_t, \sigma )  \\
 \left( 1 - a \right) N_t \right] - c
 \end{aligned}
 \]</span></p>
+<!-- GALLERY -->
+<!-- The content below is autogenerated, edit build.R instead. -->
 </section>
 </section>
-<section id="source-code" class="level1 unnumbered">
-<h1 class="unnumbered">Source Code</h1>
-<p>Visit <a href="https://github.com/liao961120/snippets"
-class="uri">https://github.com/liao961120/snippets</a> for the source
-code generating this site.</p>
+<section id="gallery" class="level1">
+<h1>Gallery</h1>
+<section id="graphs" class="level2">
+<h2>Graphs</h2>
+<section id="dag-feedback-dyn.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/tikz/dag-feedback-dyn.tex"><code>dag-feedback-dyn.tex</code></a></h3>
+<p><img src="tikz/PDF/dag-feedback-dyn.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="dag-intra.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/tikz/dag-intra.tex"><code>dag-intra.tex</code></a></h3>
+<p><img src="tikz/PDF/dag-intra.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="tree0.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/tikz/tree0.tex"><code>tree0.tex</code></a></h3>
+<p><img src="tikz/PDF/tree0.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="tree1.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/tikz/tree1.tex"><code>tree1.tex</code></a></h3>
+<p><img src="tikz/PDF/tree1.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+</section>
+<section id="equations" class="level2">
+<h2>Equations</h2>
+<section id="bottom-annotation.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/eq/bottom-annotation.tex"><code>bottom-annotation.tex</code></a></h3>
+<p><img src="eq/PDF/bottom-annotation.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="equations-intra.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/eq/equations-intra.tex"><code>equations-intra.tex</code></a></h3>
+<p><img src="eq/PDF/equations-intra.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="intra2.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/eq/intra2.tex"><code>intra2.tex</code></a></h3>
+<p><img src="eq/PDF/intra2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="matrix-multiplication.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/eq/matrix-multiplication.tex"><code>matrix-multiplication.tex</code></a></h3>
+<p><img src="eq/PDF/matrix-multiplication.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+<section id="model-formulation.tex" class="level3">
+<h3><a
+href="https://github.com/liao961120/snippets/tree/main/eq/model-formulation.tex"><code>model-formulation.tex</code></a></h3>
+<p><img src="eq/PDF/model-formulation_1.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+<img src="eq/PDF/model-formulation_2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+<img src="eq/PDF/model-formulation_3.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" /></p>
+</section>
+</section>
 </section>
 <!--
 Markdeep Diagram parser

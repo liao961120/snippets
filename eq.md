@@ -1,16 +1,41 @@
 ---
-title: Math Equation Snippets
+title: Some Personal TeX Snippets
 author: Yongfu Liao
-subtitle: Right-click to copy TeX commands to clipboard
 ---
 
 
+:::: {.body}
 
-Famous Equations
-================
+::: {.side .side-right}
+This site is built with Yihui's [*simple HTML article*](https://yihui.org/en/2023/10/html-article/) format.
+:::
 
-Taylor series
--------------
+[liao961120/snippets](https://github.com/liao961120/snippets) holds the TeX snippets I've used to code equations and TikZ graphs. To search the content inside the `.tex` files contained in this repo, run:
+
+```bash
+bash search.sh SEARCH_TERM
+```
+
+To update `README.md` (i.e., build [Gallery](#gallery)), run:
+
+```bash
+Rscript build.R
+# Rscript build.R --full  # rebuild all img from pdf
+```
+
+To edit LaTeX equations that get rendered with mathjax, edit `eq.md`.
+::::
+
+
+
+Textbook Equations
+------------------
+
+### Taylor series
+
+:::: {.side .side-right}
+Right-click equations to copy the TeX commands to clipboard.
+::::
 
 $$
 f(x) = \sum _{n=0}^{\infty }{\frac {f^{(n)}(a)}{n!}}(x-a)^{n} 
@@ -19,12 +44,10 @@ $$
 
 
 
-
 Personal Snippets
-=================
+-----------------
 
-Martrix Multiplication
-----------------------
+### Martrix Multiplication
 
 $$
 \begin{bmatrix}
@@ -44,8 +67,7 @@ $$
 $$
 
 
-Annotating Matrices
--------------------
+### Annotating Matrices
 
 $$
 \mathop{
@@ -78,8 +100,7 @@ $$
 $$
 
 
-A Bayesian Model
-----------------
+### A Bayesian Model
 
 $$
 \begin{aligned} 
@@ -117,7 +138,4 @@ $$
 $$
 
 
-Source Code {.unnumbered}
-=========================
-
-Visit <https://github.com/liao961120/snippets> for the source code generating this site.
+<!-- GALLERY -->
