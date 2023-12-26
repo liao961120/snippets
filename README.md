@@ -162,6 +162,9 @@ Gallery
 #### [`dag-intra.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-intra.tex)
    <img src="tikz/PDF/dag-intra.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
+#### [`dag-irt-subjectivity.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-irt-subjectivity.tex)
+   <img src="tikz/PDF/dag-irt-subjectivity.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`tree0.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree0.tex)
    <img src="tikz/PDF/tree0.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
@@ -178,6 +181,9 @@ Gallery
 
 #### [`intra2.tex`](https://github.com/liao961120/snippets/tree/main/eq/intra2.tex)
    <img src="eq/PDF/intra2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`irt-subjectivity.tex`](https://github.com/liao961120/snippets/tree/main/eq/irt-subjectivity.tex)
+   <img src="eq/PDF/irt-subjectivity.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 #### [`matrix-multiplication.tex`](https://github.com/liao961120/snippets/tree/main/eq/matrix-multiplication.tex)
    <img src="eq/PDF/matrix-multiplication.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />

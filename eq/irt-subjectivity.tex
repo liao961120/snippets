@@ -1,0 +1,29 @@
+%' Equations interwoven with title text 
+%' 
+%' Used in slides to explain the potential of partitioning person ability
+%' into a subjective component (e.g., report bias) and the true underlying 
+%' ability (construct of interest).
+\documentclass[12pt,preview,border=0]{standalone}
+\usepackage[paperheight=10cm,paperwidth=14cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+
+$$
+\begin{aligned} 
+    & \text{\centering \textbf{Objective Items}} \\
+    \hphantom{x} & R^s_{s,i}   \sim \text{Bernoulli}( \phi_{s,i} ) \\ 
+	\hphantom{x} & \phi_{s,i}  =A_{s,i} + D_{s,i} 
+\end{aligned}
+$$
+\\
+$$
+\begin{aligned}
+    \hphantom{xxxx} & \text{\centering \textbf{Subjective Items}} \\
+    R^o_{s,i}  & \sim \text{OrderedLogit}( \phi_{s,i}, \kappa ) \\ 
+    \phi_{s,i} &  = A_{s,i} + S_s + D_{s,i}
+\end{aligned}
+$$
+
+\end{document}
