@@ -159,7 +159,11 @@ Gallery
 #### [`dag-feedback-dyn.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-feedback-dyn.tex)
    <img src="tikz/PDF/dag-feedback-dyn.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
+#### [`dag-intra-fig1.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-intra-fig1.tex)
+   <img src="tikz/PDF/dag-intra-fig1.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`dag-intra.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-intra.tex)
+   <img src="tikz/PDF/dag-intra-fig1.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
    <img src="tikz/PDF/dag-intra.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 #### [`dag-irt-subjectivity.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-irt-subjectivity.tex)

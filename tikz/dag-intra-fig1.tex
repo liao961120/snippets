@@ -25,27 +25,14 @@
 	
     % Objective items
 	% Nodes and their relative positions
-	\node[U] (M) {$\phi$};
-	\node[O] (R) [below = .7 of M] {$R^o$};
-	\node[U] (A) [above left  = 1 of M] {$A$};
-	\node[U] (D) [right = 1.1 of M] {$D$};
+	\node[U] (M) {$M$};
+	\node[O] (S) [below = .7 of M] {$S$};
+	\node[U] (N) [above right  = 1 of M] {$N$};
+	\node[U] (P) [above left = 1 of M] {$P$};
 	% Paths connecting nodes
-    \path[->] (A) edge (M);
-	\path[->] (D) edge (M);
-	\path[->] (M) edge (R);
-
-    % Subjective items
-	% Nodes and their relative positions
-	\node[U] (M2) [right = 4.5 of M] {$\phi$};
-	\node[O] (R2) [below = .7 of M2] {$R^s$};
-	\node[U] (A2) [above left  = 1 of M2] {$A$};
-	\node[U] (D2) [right = 1.1 of M2] {$D$};
-    \node[U] (S)  [above right = 1 of M2] {$S$};
-	% Paths connecting nodes
-    \path[->] (A2) edge (M2);
-	\path[->] (D2) edge (M2);
-	\path[->] (M2) edge (R2);
-    \path[->] (S)  edge (M2);
+    \path[->] (P) edge (M);
+	\path[->] (N) edge (M);
+	\path[->] (M) edge (S);
 
 \end{tikzpicture}
 	
