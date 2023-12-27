@@ -13,16 +13,16 @@
 $$
 \begin{aligned} 
     & \text{\centering \textbf{Objective Items}} \\
-    \hphantom{x} & R^s_{s,i}   \sim \text{Bernoulli}( \phi_{s,i} ) \\ 
-	\hphantom{x} & \phi_{s,i}  =A_{s,i} + D_{s,i} 
+    \hphantom{x} & R_{s,j}  \sim \text{Bernoulli}( \phi_{s,j} ) \\ 
+	\hphantom{x} & \phi_{s,j}  = A_{s} + D_{j} 
 \end{aligned}
 $$
 \\
 $$
 \begin{aligned}
     \hphantom{xxxx} & \text{\centering \textbf{Subjective Items}} \\
-    R^o_{s,i}  & \sim \text{OrderedLogit}( \phi_{s,i}, \kappa ) \\ 
-    \phi_{s,i} &  = A_{s,i} + S_s + D_{s,i}
+    R_{s,i}  & \sim \text{OrderedLogit}( \phi_{s,i}, \kappa ) \\ 
+    \phi_{s,i} &  = A_{s} + S_s + D_{i}
 \end{aligned}
 $$
 
