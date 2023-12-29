@@ -1,0 +1,54 @@
+%' Directed acyclic graph (DAG) with arrow text annotations
+%'
+%' DAG illustrating the partition of subjectivity in a potential mixed-item 
+%' IRT models.
+
+\documentclass[12pt,preview,border=0]{standalone}
+\usepackage[paperheight=10cm,paperwidth=20cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{kmath,kerkis}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata,positioning}
+
+\begin{document} 
+\begin{center}
+\begin{tikzpicture}[
+	> = stealth, % arrow head style
+	shorten > = 1pt, % don't touch arrow head to node
+	auto,
+	node distance = 2cm, % distance between nodes
+	thick, % line style
+	U/.style={circle, draw=black, inner sep=1.8pt, outer sep=1.5pt, minimum size=11mm, font=\Large},  %draw=black, fill=white
+	O/.style={circle, inner sep=3.4pt, outer sep=-3pt, minimum size=11mm, font=\Large},              %draw=white, fill=white
+	]
+	
+    % Objective items
+	% Nodes and their relative positions
+	\node[U] (M) {$\phi_{s,j}$};
+	\node[O] (R) [above = .7 of M] {$R_{s,j}$};
+	% \node[U] (A) [above left  = 1 of M] {$A$};
+	\node[U] (D) [right = 1.1 of M] {$D_j$};
+	% Paths connecting nodes
+    % \path[->] (A) edge (M);
+	\path[->] (D) edge (M);
+	\path[->] (M) edge (R);
+
+    % Subjective items
+	% Nodes and their relative positions
+	\node[U] (M2) [below = 2 of M] {$\phi_{s,i}$};
+	\node[O] (R2) [below = .7 of M2] {$R_{s,i}$};
+	\node[U] (A2) [above left  = 1 of M2] {$A_s$};
+	\node[U] (D2) [right = 1.1 of M2] {$D_i$};
+    \node[U] (S)  [above right = 1 of M2] {$S_s$};
+	% Paths connecting nodes
+    \path[->] (A2) edge (M2);
+    \path[->] (A2) edge (M);
+	\path[->] (D2) edge (M2);
+	\path[->] (M2) edge (R2);
+    \path[->] (S)  edge (M2);
+
+\end{tikzpicture}
+	
+
+\end{center}\end{document}
