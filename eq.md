@@ -135,7 +135,7 @@ $$
     \textbf{K} ) 
     \\
     & ~~~ k_{i,j} = \eta ~ \text{exp}( -\rho \text{d}^\text{2}_{i,j} ) \\
-    \end{aligned}
+\end{aligned}
 $$
 
 

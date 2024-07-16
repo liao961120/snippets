@@ -135,7 +135,7 @@ $$
     \textbf{K} ) 
     \\
     & ~~~ k_{i,j} = \eta ~ \text{exp}( -\rho \text{d}^\text{2}_{i,j} ) \\
-    \end{aligned}
+\end{aligned}
 $$
 
 
@@ -172,6 +172,9 @@ Gallery
 
 #### [`dag-irt-subjectivity2.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-irt-subjectivity2.tex)
    <img src="tikz/PDF/dag-irt-subjectivity2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`tree-hierarchicalModel.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree-hierarchicalModel.tex)
+   <img src="tikz/PDF/tree-hierarchicalModel.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 #### [`tree0.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree0.tex)
    <img src="tikz/PDF/tree0.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
