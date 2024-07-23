@@ -1,0 +1,44 @@
+%' Equations interwoven with title text 
+%' 
+%' Used in slides to explain the potential of partitioning person ability
+%' into a subjective component (e.g., report bias) and the true underlying 
+%' ability (construct of interest).
+\documentclass[12pt,preview,border=0]{standalone}
+\usepackage[paperheight=10cm,paperwidth=14cm]{geometry}
+\usepackage{amsmath}
+
+% https://tug.org/FontCatalogue/mathfonts.html
+\usepackage{heuristica}
+\usepackage[heuristica,vvarbb,bigdelims]{newtxmath}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\textosf{#1}}
+
+\newcommand\EV{\text{V}_{\text{exp}}}
+\newcommand\A{\text{A}_{i}}
+\newcommand\N{\text{N}_{i}}
+\newcommand\V{\text{V}_{i}}
+\newcommand\Al{\text{A}_{\text{(0,1)}}}
+
+
+\begin{document}
+
+$$
+\begin{aligned} 
+    \N        & \sim \text{Gamma-Poisson}(\mu, \phi) \\
+    \EV       &    = \text{EV}(\N) \\
+    \lambda_i &    = \EV + \text{erf}(\A) \EV (1 - \frac{\EV}{\N}) \\
+    \V        & \sim \text{Poisson}(\lambda_i)
+\end{aligned}
+$$
+\\
+$$
+\begin{aligned}
+    \mu_i     &    = \beta ~  \text{logistic}(A) \\
+    \N        & \sim \text{Gamma-Poisson}(\mu, \phi) \\
+    \EV       &    = \text{EV}(\N) \\
+    \lambda_i &    = \EV + \text{erf}(\A) \EV (1 - \frac{\EV}{\N}) \\
+    \V        & \sim \text{Poisson}(\lambda_i)
+\end{aligned}
+$$
+
+\end{document}
