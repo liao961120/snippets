@@ -13,11 +13,11 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{\textosf{#1}}
 
-\newcommand\EV{\text{V}_{\text{exp}}}
-\newcommand\A{\text{A}_{i}}
-\newcommand\N{\text{N}_{i}}
-\newcommand\V{\text{V}_{i}}
-\newcommand\Al{\text{A}_{\text{(0,1)}}}
+\newcommand\EV{V^\text{e}_{i}}
+\newcommand\A{A_{i}}
+\newcommand\N{N_{i}}
+\newcommand\V{V_{i}}
+\newcommand\Al{A_{\text{(0,1)}}}
 
 
 \begin{document}
@@ -26,17 +26,17 @@ $$
 \begin{aligned} 
     \N        & \sim \text{Gamma-Poisson}(\mu, \phi) \\
     \EV       &    = \text{EV}(\N) \\
-    \lambda_i &    = \EV + \text{erf}(\A) \EV (1 - \frac{\EV}{\N}) \\
+    \lambda_i &    = \EV + \text{erf}(\A) ~ \EV ~ (1 - \frac{\EV}{\N}) \\
     \V        & \sim \text{Poisson}(\lambda_i)
 \end{aligned}
 $$
 \\
 $$
 \begin{aligned}
-    \mu_i     &    = \beta ~  \text{logistic}(A) \\
+    \mu_i     &    = \beta ~  \text{logistic}(\A) \\
     \N        & \sim \text{Gamma-Poisson}(\mu, \phi) \\
     \EV       &    = \text{EV}(\N) \\
-    \lambda_i &    = \EV + \text{erf}(\A) \EV (1 - \frac{\EV}{\N}) \\
+    \lambda_i &    = \EV + \text{erf}(\A) ~ \EV ~ (1 - \frac{\EV}{\N}) \\
     \V        & \sim \text{Poisson}(\lambda_i)
 \end{aligned}
 $$
