@@ -1,0 +1,57 @@
+\documentclass[preview,border=0]{standalone}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[paperheight=20cm,paperwidth=14cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning,shapes.multipart}
+\setCJKmainfont{LiHei Pro}
+
+\begin{document}
+
+% \begin{tikzpicture}[
+%   level distance=1.5cm,
+%   sibling distance=2.5cm,
+%   every node/.style={font=\footnotesize},
+%   edge from parent/.style={draw, -{Latex[length=3mm]}, thick, > = stealth}, % Arrow style
+%   level 1/.style={sibling distance=3.5cm},
+%   level 2/.style={sibling distance=3cm},
+%   level 3/.style={sibling distance=2cm}
+% ]
+
+\begin{tikzpicture}[
+    thick, % line style
+    > = stealth, % arrow head style
+    edge from parent/.style={draw, -{Latex[length=3mm]}},
+    every text node part/.style={align=center},
+    level distance=2cm,
+    U/.style={circle, draw=white, inner sep=-2pt, outer sep=-1pt, minimum size=6mm},
+    % level 2/.style ={level distance=3cm},
+  level 1/.style={sibling distance=5.2cm},
+  level 2/.style={sibling distance=2.8cm,level distance=2.6cm},
+  level 3/.style={sibling distance=1.5cm,level distance=2cm}
+]
+
+% Root node
+\node{$(\mathrm{Child}_i, \mathrm{Item}_j)$}
+  child { node[U]{聽常 \\ ($z = 0$)}
+    child { node[U]{未成熟 \\ ($k = 0$)}  edge from parent[->] 
+        child{ node{是} edge from parent[->] }
+    }
+    child { node[U]{已成熟 \\ ($k = 1$)}  edge from parent[->] 
+        child{ node{否} edge from parent[->] }
+    }
+    edge from parent[->]
+  }
+  child { node[U]{聽損 \\ ($z = 1$)}
+    child { node[U]{未成熟 \\ ($k = 0$)}  edge from parent[->] 
+        child{ node{是} edge from parent[->] }
+    }
+    child { node[U]{已成熟 \\ ($k = 1$)}  edge from parent[->] 
+        child{ node{是} edge from parent[->] }
+    }
+    edge from parent[->]
+  };
+
+\end{tikzpicture}
+
+\end{document}
