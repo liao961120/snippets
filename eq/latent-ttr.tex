@@ -34,7 +34,7 @@ $$
 $$
 \begin{aligned}
     \mu_i     &    = \beta ~  \text{logistic}(\A) \\
-    \N        & \sim \text{Gamma-Poisson}(\mu, \phi) \\
+    \N        & \sim \text{Gamma-Poisson}(\mu_i, \phi) \\
     \EV       &    = \text{EV}(\N) \\
     \lambda_i &    = \EV + \text{erf}(\A) ~ \EV ~ (1 - \frac{\EV}{\N}) \\
     \V        & \sim \text{Poisson}(\lambda_i)

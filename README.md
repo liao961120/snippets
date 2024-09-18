@@ -173,11 +173,20 @@ Gallery
 #### [`dag-irt-subjectivity2.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-irt-subjectivity2.tex)
    <img src="tikz/PDF/dag-irt-subjectivity2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
+#### [`latent-ttr-ev.tex`](https://github.com/liao961120/snippets/tree/main/tikz/latent-ttr-ev.tex)
+   <img src="tikz/PDF/latent-ttr-ev.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`latent-ttr.tex`](https://github.com/liao961120/snippets/tree/main/tikz/latent-ttr.tex)
+   <img src="tikz/PDF/latent-ttr-ev.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
    <img src="tikz/PDF/latent-ttr.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+   <img src="tikz/PDF/latent-ttr2-ev.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
    <img src="tikz/PDF/latent-ttr2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
+#### [`latent-ttr2-ev.tex`](https://github.com/liao961120/snippets/tree/main/tikz/latent-ttr2-ev.tex)
+   <img src="tikz/PDF/latent-ttr2-ev.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`latent-ttr2.tex`](https://github.com/liao961120/snippets/tree/main/tikz/latent-ttr2.tex)
+   <img src="tikz/PDF/latent-ttr2-ev.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
    <img src="tikz/PDF/latent-ttr2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 #### [`tree-hierarchicalModel.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree-hierarchicalModel.tex)
@@ -188,6 +197,18 @@ Gallery
 
 #### [`tree1.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree1.tex)
    <img src="tikz/PDF/tree1.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`tree3.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree3.tex)
+   <img src="tikz/PDF/tree3.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`tree4.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree4.tex)
+   <img src="tikz/PDF/tree4.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`tree5.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree5.tex)
+   <img src="tikz/PDF/tree5.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`tree6.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree6.tex)
+   <img src="tikz/PDF/tree6.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 ### Equations
 
@@ -202,6 +223,9 @@ Gallery
 
 #### [`irt-subjectivity.tex`](https://github.com/liao961120/snippets/tree/main/eq/irt-subjectivity.tex)
    <img src="eq/PDF/irt-subjectivity.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`latent-ttr.tex`](https://github.com/liao961120/snippets/tree/main/eq/latent-ttr.tex)
+   <img src="eq/PDF/latent-ttr.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 #### [`matrix-multiplication.tex`](https://github.com/liao961120/snippets/tree/main/eq/matrix-multiplication.tex)
    <img src="eq/PDF/matrix-multiplication.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />

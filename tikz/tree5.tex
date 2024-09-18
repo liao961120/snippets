@@ -1,0 +1,49 @@
+\documentclass[preview,border=0]{standalone}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[paperheight=18cm,paperwidth=12cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning,shapes.multipart}
+\setCJKmainfont{微軟正黑體}
+
+\begin{document}
+
+% \begin{tikzpicture}[
+%   level distance=1.5cm,
+%   sibling distance=2.5cm,
+%   every node/.style={font=\footnotesize},
+%   edge from parent/.style={draw, -{Latex[length=3mm]}, thick, > = stealth}, % Arrow style
+%   level 1/.style={sibling distance=3.5cm},
+%   level 2/.style={sibling distance=3cm},
+%   level 3/.style={sibling distance=2cm}
+% ]
+
+\begin{tikzpicture}[
+    thick, % line style
+    > = stealth, % arrow head style
+    edge from parent/.style={draw, -{Latex[length=3mm]}},
+    every text node part/.style={align=center},
+    level distance=3cm,
+    U/.style={circle, draw=white, inner sep=0pt, outer sep=2pt, minimum size=6mm},
+    % level 2/.style ={level distance=3cm},
+  level 1/.style={sibling distance=2.8cm},
+  level 2/.style={sibling distance=1.3cm},
+  level 3/.style={sibling distance=1.5cm,level distance=2cm}
+]
+
+% Root node
+\node{3至6歲孩子} [grow=0]
+  child { node[U]{通過篩檢}
+    child { node[U]{確認聽常 \\ (真陰性)}  edge from parent[->,dashed] }
+    child { node[U]{確認聽損 \\ (偽陰性)}  edge from parent[->,dashed] }
+    edge from parent[->]
+  }
+  child { node[U]{未過篩檢}
+    child { node[U]{確認聽常 \\ (偽陽性)}  edge from parent[->] }
+    child { node[U]{確認聽損 \\ (真陽性)}  edge from parent[->] }
+    edge from parent[->]
+  };
+
+\end{tikzpicture}
+
+\end{document}
