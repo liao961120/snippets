@@ -189,6 +189,13 @@ Gallery
    <img src="tikz/PDF/latent-ttr2-ev.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
    <img src="tikz/PDF/latent-ttr2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
+#### [`tree-dawid_simulation.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree-dawid_simulation.tex)
+   <img src="tikz/PDF/tree-dawid_simulation.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+   <img src="tikz/PDF/tree-dawid_simulation2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
+#### [`tree-dawid_simulation2.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree-dawid_simulation2.tex)
+   <img src="tikz/PDF/tree-dawid_simulation2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`tree-hierarchicalModel.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree-hierarchicalModel.tex)
    <img src="tikz/PDF/tree-hierarchicalModel.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
@@ -201,8 +208,11 @@ Gallery
 #### [`tree3.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree3.tex)
    <img src="tikz/PDF/tree3.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
+#### [`tree4-2.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree4-2.tex)
+   <img src="tikz/PDF/tree4-2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`tree4.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree4.tex)
-   <img src="tikz/PDF/tree4.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+   <img src="tikz/PDF/tree4-2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
 #### [`tree5.tex`](https://github.com/liao961120/snippets/tree/main/tikz/tree5.tex)
    <img src="tikz/PDF/tree5.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />

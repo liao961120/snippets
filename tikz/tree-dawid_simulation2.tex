@@ -1,0 +1,102 @@
+\documentclass[preview,border=0]{standalone}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[paperheight=25cm,paperwidth=13cm]{geometry}
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta, positioning,shapes.multipart}
+\setCJKmainfont{微軟正黑體}
+
+\begin{document}
+\begin{center}
+% \begin{tikzpicture}[
+%   level distance=1.5cm,
+%   sibling distance=2.5cm,
+%   every node/.style={font=\footnotesize},
+%   edge from parent/.style={draw, -{Latex[length=3mm]}, thick, > = stealth}, % Arrow style
+%   level 1/.style={sibling distance=3.5cm},
+%   level 2/.style={sibling distance=3cm},
+%   level 3/.style={sibling distance=2cm}
+% ]
+
+
+
+\begin{tikzpicture}[
+%   scale=0.5,
+  thick, % line style
+  > = stealth, % arrow head style
+  edge from parent/.style={draw, -{Latex[length=3mm]}},
+  every text node part/.style={align=center},
+  level distance=1.9cm,
+  U/.style={circle, draw=white, inner sep=-2pt, outer sep=-1pt, minimum size=6mm},
+  % level 2/.style ={level distance=3cm},
+  level 1/.style={sibling distance=3.8cm},
+  level 2/.style={sibling distance=1.8cm,level distance=2.4cm},
+  level 3/.style={sibling distance=1.5cm}
+]
+
+% Root node
+\node{$\textrm{聽損孩子}_i$ \\ {\small ($z=1$)}}
+child { node[U]{$\textrm{篩檢}_A$}
+  child { node[U]{陰性 \\ {\scriptsize ($\mathrm{Y}_A = 0$)} }  
+      edge from parent[->] node[above left] {\small $1 - \theta_{A,1}$} 
+  }
+  child { node[U]{陽性 \\ {\scriptsize ($\mathrm{Y}_A = 1$)}  }
+      edge from parent[->] node[above right] {\small $\theta_{A,1}$} 
+  }
+  edge from parent[->]
+}
+child { node[U]{$\textrm{篩檢}_B$}
+  child { node[U]{陰性 \\ {\scriptsize ($\mathrm{Y}_B = 0$)} }  
+      edge from parent[->] node[above left] {\small $1 - \theta_{B,1}$} 
+  }
+  child { node[U]{陽性 \\ {\scriptsize ($\mathrm{Y}_B= 1$)}  }
+      edge from parent[->] node[above right] {\small $\theta_{B,1}$} 
+  }
+  edge from parent[->]
+};
+
+\end{tikzpicture}
+
+% \vspace{.5cm}% NO SPACE!
+\newpage
+
+\begin{tikzpicture}[
+    %   scale=0.5,
+      thick, % line style
+      > = stealth, % arrow head style
+      edge from parent/.style={draw, -{Latex[length=3mm]}},
+      every text node part/.style={align=center},
+      level distance=1.9cm,
+      U/.style={circle, draw=white, inner sep=-2pt, outer sep=-1pt, minimum size=6mm},
+      % level 2/.style ={level distance=3cm},
+      level 1/.style={sibling distance=3.8cm},
+      level 2/.style={sibling distance=1.8cm,level distance=2.4cm},
+      level 3/.style={sibling distance=1.5cm}
+    ]
+
+  % Root node
+  \node{$\textrm{聽常孩子}_k$ \\ {\small ($z=0$)}}
+  child { node[U]{$\textrm{篩檢}_A$}
+    child { node[U]{陰性 \\ {\scriptsize ($\mathrm{Y}_A = 0$)} }  
+        edge from parent[->] node[above left] {\small $1 - \theta_{A,0}$} 
+    }
+    child { node[U]{陽性 \\ {\scriptsize ($\mathrm{Y}_A = 1$)}  }
+        edge from parent[->] node[above right] {\small $\theta_{A,0}$} 
+    }
+    edge from parent[->]
+  }
+  child { node[U]{$\textrm{篩檢}_B$}
+    child { node[U]{陰性 \\ {\scriptsize ($\mathrm{Y}_B = 0$)} }  
+        edge from parent[->] node[above left] {\small $1 - \theta_{B,0}$} 
+    }
+    child { node[U]{陽性 \\ {\scriptsize ($\mathrm{Y}_B= 1$)}  }
+        edge from parent[->] node[above right] {\small $\theta_{B,0}$} 
+    }
+    edge from parent[->]
+  };
+  
+  \end{tikzpicture}
+
+\end{center}
+\end{document}
