@@ -28,14 +28,14 @@
     % level 2/.style ={level distance=3cm},
   level 1/.style={sibling distance=5.2cm},
   level 2/.style={sibling distance=2.8cm,level distance=2.6cm},
-  level 3/.style={sibling distance=1.5cm,level distance=2cm}
+  level 3/.style={sibling distance=1.5cm,level distance=2.2cm}
 ]
 
 % Root node
 \node (R) {$\textrm{孩子}_i$}
   child { node[U]{聽常 \\ ($z = 0$)}
     child { node[U]{未成熟 \\ ($k = 0$)}  edge from parent[->] 
-        child{ node{是 \\ $p = 1$} edge from parent[->] }
+        child{ node{是 \\ $p = 1 - \gamma_j$} edge from parent[->] }
     }
     child { node[U]{已成熟 \\ ($k = 1$)}  edge from parent[->] 
         child{ node{否 \\ $p = G_j$} edge from parent[->] }
@@ -44,7 +44,7 @@
   }
   child { node[U]{聽損 \\ ($z = 1$)}
     child { node[U]{未成熟 \\ ($k = 0$)}  edge from parent[->] 
-        child{ node{是 \\ $p = 1$} edge from parent[->] }
+        child{ node{是 \\ $p = 1 - \gamma_j$} edge from parent[->] }
     }
     child { node[U]{已成熟 \\ ($k = 1$)}  edge from parent[->] 
         child{ node{是 \\ $p = 1 - S_j$} edge from parent[->] }
