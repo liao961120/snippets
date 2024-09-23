@@ -1,7 +1,7 @@
 \documentclass[preview,border=0]{standalone}
 \usepackage{fontspec}
 \usepackage{xeCJK}
-\usepackage[paperheight=20cm,paperwidth=14cm]{geometry}
+\usepackage[paperheight=20cm,paperwidth=16cm]{geometry}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, positioning,shapes.multipart}
 \setCJKmainfont{微軟正黑體}
@@ -26,8 +26,8 @@
     level distance=2cm,
     U/.style={circle, draw=white, inner sep=-2pt, outer sep=-1pt, minimum size=6mm},
     % level 2/.style ={level distance=3cm},
-  level 1/.style={sibling distance=5.2cm},
-  level 2/.style={sibling distance=2.8cm,level distance=2.6cm},
+  level 1/.style={sibling distance=4.1cm},
+  level 2/.style={sibling distance=2cm,level distance=2.6cm},
   level 3/.style={sibling distance=1.5cm,level distance=2.2cm}
 ]
 
@@ -35,22 +35,41 @@
 \node (R) {$\textrm{孩子}_i$}
   child { node[U]{聽常 \\ ($z = 0$)}
     child { node[U]{未成熟 \\ ($k = 0$)}  edge from parent[->] 
-        child{ node{是 \\ $p = 1 - \gamma_j$} edge from parent[->] }
+        child{ node(A){是} edge from parent[->] }
     }
     child { node[U]{已成熟 \\ ($k = 1$)}  edge from parent[->] 
-        child{ node{否 \\ $p = G_j$} edge from parent[->] }
+        child{ node(B){否} edge from parent[->] }
     }
     edge from parent[->]
   }
   child { node[U]{聽損 \\ ($z = 1$)}
     child { node[U]{未成熟 \\ ($k = 0$)}  edge from parent[->] 
-        child{ node{是 \\ $p = 1 - \gamma_j$} edge from parent[->] }
+        child{ node(C){是} edge from parent[->] }
     }
     child { node[U]{已成熟 \\ ($k = 1$)}  edge from parent[->] 
-        child{ node{是 \\ $p = 1 - S_j$} edge from parent[->] }
+        child{ node(D){是} edge from parent[->] }
     }
     edge from parent[->] 
   };
+
+  	% Nodes and their relative positions
+    \node[U] (a) [below = .05 of A] {$1$};
+    \node[U] (aa) [below = .05 of a] {$1 - \gamma_j$};
+
+    \node[U] (b) [below = .05 of B] {$0$};
+    \node[U] (bb) [below = .05 of b] {$G_j$};
+
+    \node[U] (c) [below = .05 of C] {$1$};
+    \node[U] (cc) [below = .05 of c] {$1 - \gamma_j$};
+
+    \node[U] (d) [below = .05 of D] {$1$};
+    \node[U] (dd) [below = .05 of d] {$1 - S_j$};
+
+
+    \node[] (T1) [left = .7 of a]   {\footnotesize 答「是」的機率 \scriptsize (理想)};
+    \node[] (T2) [below = .07 of T1] {\footnotesize 答「是」的機率 \scriptsize (現實)};
+
+
 \end{tikzpicture}
 
 \end{document}
