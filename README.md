@@ -156,6 +156,10 @@ Gallery
 
 ### Graphs
 
+#### [`dag-dawid.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-dawid.tex)
+   <img src="tikz/PDF/dag-dawid_1.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+   <img src="tikz/PDF/dag-dawid_2.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
+
 #### [`dag-feedback-dyn.tex`](https://github.com/liao961120/snippets/tree/main/tikz/dag-feedback-dyn.tex)
    <img src="tikz/PDF/dag-feedback-dyn.png" style="display:block;max-height:300px;max-width:370px; margin:0 auto; padding: 0 auto;" />
 
